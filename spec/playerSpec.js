@@ -12,7 +12,7 @@ describe("Player", function() {
     it("records a name", function() {
         player.recordName("Charlene");
       expect(player.showName()).toEqual("Charlene")
-    })
-
+    });
   });
+
 });
