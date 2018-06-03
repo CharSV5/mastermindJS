@@ -15,4 +15,11 @@ describe("Player", function() {
     });
   });
 
+  describe("turn", function() {
+    it("lets the player guess what the colours are", function() {
+      player.turn(["Red", "Yellow", "Pink", "Grey"]);
+      expect(player.showCurrentGuess()).toEqual("["Red", "Yellow", "Pink", "Grey"]")
+    })
+  })
+
 });

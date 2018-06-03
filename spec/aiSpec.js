@@ -8,7 +8,7 @@ describe("Ai", function() {
   describe("at the start of the game", function() {
     it("ai chooses colours at random", function() {
       ai.chooseColours();
-      expect(ai.result()).to.include("Red" || "Blue" || "Green" || "Orange" || "Grey" || "White" || "Pink" || "Yellow")
+      expect(ai.this._colours)).includes(ai.result();
     });
     it("chooses four colours", function() {
       ai.chooseColours();
