@@ -13,4 +13,10 @@ describe("Game", function() {
         expect(game.playerTwoIdentity()).toEqual("Computer")
     });
   });
+
+  describe("#showTurn", function() {
+    it("starts on turn 1", function() {
+      expect(game.showTurn()).toEqual(1)
+    });
+  });
 });

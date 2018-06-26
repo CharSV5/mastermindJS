@@ -1,5 +1,6 @@
 function Game() {
   this.playerTwo = ""
+  this.turn = 1
 }
 
 Game.prototype.choosePlayer = function(playerTwoName) {
@@ -9,4 +10,8 @@ Game.prototype.choosePlayer = function(playerTwoName) {
 
 Game.prototype.playerTwoIdentity = function() {
   return this.playerTwo.showName();
+}
+
+Game.prototype.showTurn = function() {
+  return this.turn;
 }
