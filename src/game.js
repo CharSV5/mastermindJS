@@ -15,3 +15,7 @@ Game.prototype.playerTwoIdentity = function() {
 Game.prototype.showTurn = function() {
   return this.turn;
 }
+
+Game.prototype.nextTurn = function() {
+  return this.turn += 1;
+}

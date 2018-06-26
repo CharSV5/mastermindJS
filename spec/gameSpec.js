@@ -19,4 +19,10 @@ describe("Game", function() {
       expect(game.showTurn()).toEqual(1)
     });
   });
+
+  describe("#nextTurn", function() {
+    it("increments the turn counter", function() {
+      expect(game.nextTurn()).toEqual(2)
+    })
+  })
 });
